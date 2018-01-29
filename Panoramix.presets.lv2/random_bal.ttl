@@ -1,0 +1,46 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://faustlv2.bitbucket.org/Panoramix> ;
+	rdfs:label "random-bal" ;
+	lv2:port [
+		lv2:symbol "Balance_11" ;
+		pset:value 0.5
+	] , [
+		lv2:symbol "Balance_Volume_Mode_1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Bandwidth_6" ;
+		pset:value 0.81500006
+	] , [
+		lv2:symbol "Beat_Period_3" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "Bpm_2" ;
+		pset:value 120.0
+	] , [
+		lv2:symbol "Bypass_0" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Invert_LFO_9" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "LFO_Type_5" ;
+		pset:value 4.0
+	] , [
+		lv2:symbol "Make_Up_Gain_10" ;
+		pset:value 1.5
+	] , [
+		lv2:symbol "Smoothness_7" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "Speed_Multiplier_4" ;
+		pset:value 1.0
+	] .
