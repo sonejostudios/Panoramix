@@ -52,7 +52,7 @@ __LV2 Presets:__
 * default
 * ducking: simulates a ducking on the beat
 * lanscape: scanning slowly the panorama
-* random-bal: random position in th panorama
+* random-bal: random position in the panorama
 * random-vol: random volume
 * reverse-saw: a saw up LFO
 * shutter: fast volume lfo
