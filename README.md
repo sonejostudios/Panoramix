@@ -2,6 +2,9 @@
 Stereo Panorama/Balance and Volume Automation Tool.
 
 
+![screenshot](https://raw.githubusercontent.com/sonejostudios/Panoramix/master/Panoramix11.png "Panoramix (Ardour)")
+
+
 
 __Features:__
 * Bypass the DSP, but not the meters (can be used as input monitor)
@@ -21,9 +24,6 @@ __Features:__
 * LV2 Presets
 
 
-
-
-![screenshot](https://raw.githubusercontent.com/sonejostudios/Panoramix/master/Panoramix11.png "Panoramix (Ardour)")
 
 
 __Inputs/Outputs:__
