@@ -4,6 +4,7 @@ Stereo Panorama/Balance and Volume Automation Tool.
 
 ![screenshot](https://raw.githubusercontent.com/sonejostudios/Panoramix/master/Panoramix11.png "Panoramix (Ardour)")
 
+Demo: https://www.youtube.com/watch?v=vEbl62ZnjqU
 
 
 __Features:__
