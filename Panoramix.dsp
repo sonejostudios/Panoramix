@@ -1,5 +1,5 @@
 declare name        "Panoramix";
-declare version     "1.0";
+declare version     "1.1";
 declare author      "Vincent Rateau";
 declare license     "GPL v3";
 declare reference   "www.sonejo.net";
@@ -9,10 +9,10 @@ declare description	"Stereo Panorama/Balance and Volume Automation Tool.";
 
 import("stdfaust.lib");
 
-process = bypassstereo : stereorama,_,_ :> _, _   : balancemeter : clipmeter ;
+process = bypassstereo : panoramix,_,_ :> _, _   : balancemeter : clipmeter ;
 
 // main
-stereorama = _*(inverter - oscil), _*(inverter2 - oscil)*(-volmode@avdelay)  : balance :  makeupgain : autovolstereo ;
+panoramix = _*(inverter - oscil), _*(inverter2 - oscil)*(-volmode@avdelay)  : balance :  makeupgain : autovolstereo ;
 
 // short break preventing clics for balance/volumemode
 autovolstereo = _ * autovol, _ * autovol ;
@@ -43,6 +43,7 @@ oscil = autopanner : hgroup("[08]", bandwidth : smoothness) : _*(1-bypassbox) : 
     // for testing only
     autopanner_test = sinuslive ;
     sinuslive = (os.osc(bps) + 1) / 2 ;
+
 
     //lfo choice
     autopanner = synthchoice <: (_==0) * sinus, (_==1) * triangle, (_==2) *  saw, (_==3) *  square, (_==4) *  random :> _ ;
@@ -120,13 +121,13 @@ gui_bpm_slider = hslider("[03]Bpm[style:knob]",120,0,240,0.01) ;
 gui_devider = nentry("[04]Beat/Period", 2,1,256,1) ;
 gui_multiplier = nentry("[05]Speed Multiplier", 1,1,128,1) ;
 
-gui_synthchoice = vslider("[06]Oscillator Type[style:menu{'sin':0 ; 'triangle':1 ; 'saw':2 ; 'square':3 ; 'random':4}]", 0,0,4,1) ;
-gui_invertbox = checkbox("[07]Invert Oscillator") ;
+gui_synthchoice = vslider("[06]LFO Type[style:menu{'sin':0 ; 'triangle':1 ; 'saw':2 ; 'square':3 ; 'random':4}]", 0,0,4,1) ;
 
-gui_bandwidth = hslider("[08]Bandwidth[style:knob]",1,0.001,1,0.001) ;
-gui_smoothness = hslider("[09]Smoothness[style:knob]",0,0,0.5,0.001) ;
+gui_bandwidth = hslider("[07]Bandwidth[style:knob]",1,0.001,1,0.001) ;
+gui_smoothness = hslider("[08]Smoothness[style:knob]",0,0,0.5,0.001) ;
 
-gui_oscillator =  hbargraph("[10]Oscillator",0 ,1) ;
+gui_oscillator =  hbargraph("[09]LFO",0 ,1) ;
+gui_invertbox = checkbox("[10]Invert LFO") ;
 
 gui_gainslider =  hslider("[11]Make Up Gain", 1.5, 0, 3, 0.01);
 gui_bal = hslider("[12]Balance",0.5,0,1,0.01) ;

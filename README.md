@@ -26,14 +26,13 @@ __Features:__
 
 
 
-
 __Inputs/Outputs:__
 * Audio Inputs (L,R)
 * Audio Outputs (L,R)
 
 
 __LV2:__
-* An LV2 Build with presets can be found under releases.
+* An LV2 Build with presets can be found under releases: https://github.com/sonejostudios/Panoramix/releases
 * Unpack LV2 build in your LV2 folder, e.g ~/.lv2
 * Panoramix.lv2 : the dsp
 * Panoramix.presets.lv2 : the presets
@@ -41,8 +40,9 @@ __LV2:__
 
 __Build/Install:__
 * Use the Faust Online Compiler to compile it as Standalone Jack Application or Audio Plugin (LV2, VST, etc): http://faust.grame.fr/compiler
-* This software was tested only with Linux JackQT Faust Compiler.
-* Or compile them simply with (you'll need to install the Faust Compiler): 
+* This software was tested only with Linux JackQT Faust Compiler and as LV2 on a Linux machine.
+
+* To compile a JackQt Standalone application simply with (you'll need to install the Faust Compiler): 
   * $ faust2jaqt Panoramix.dsp
 * To Start:
   * $ ./Panoramix
