@@ -64,10 +64,10 @@ oscil = autopanner : hgroup("[08]", bandwidth : smoothness) : _*(1-bypassbox) : 
 
 
 //bypass
-bypassstereo = bypassmono, bypassmono : route
+bypassstereo = bypassmono, bypassmono : myroute
   with{
     bypassmono = _ <: _ , _ : _*(1-bypassbox), _*bypassbox ;
-    route(a,b,c,d) = a,c,b,d ;
+    myroute(a,b,c,d) = a,c,b,d ;
   };
   //this is outside  the bypass function because of osc-bargraph * bypass-checkbox
   bypassbox =  gui_bypassbox : si.smooth(0.999);
