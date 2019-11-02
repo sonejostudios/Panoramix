@@ -7,36 +7,36 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <default.ttl>
-	lv2:appliesTo <http://faustlv2.bitbucket.org/Panoramix> ;
+	lv2:appliesTo <https://faustlv2.bitbucket.io/Panoramix> ;
 	a pset:Preset ;
 	rdfs:seeAlso <default.ttl> .
 
 <ducking.ttl>
-	lv2:appliesTo <http://faustlv2.bitbucket.org/Panoramix> ;
+	lv2:appliesTo <https://faustlv2.bitbucket.io/Panoramix> ;
 	a pset:Preset ;
 	rdfs:seeAlso <ducking.ttl> .
 
 <landscape.ttl>
-	lv2:appliesTo <http://faustlv2.bitbucket.org/Panoramix> ;
+	lv2:appliesTo <https://faustlv2.bitbucket.io/Panoramix> ;
 	a pset:Preset ;
 	rdfs:seeAlso <landscape.ttl> .
 
 <random_bal.ttl>
-	lv2:appliesTo <http://faustlv2.bitbucket.org/Panoramix> ;
+	lv2:appliesTo <https://faustlv2.bitbucket.io/Panoramix> ;
 	a pset:Preset ;
 	rdfs:seeAlso <random_bal.ttl> .
 
 <random_vol.ttl>
-	lv2:appliesTo <http://faustlv2.bitbucket.org/Panoramix> ;
+	lv2:appliesTo <https://faustlv2.bitbucket.io/Panoramix> ;
 	a pset:Preset ;
 	rdfs:seeAlso <random_vol.ttl> .
 
 <reverse_saw.ttl>
-	lv2:appliesTo <http://faustlv2.bitbucket.org/Panoramix> ;
+	lv2:appliesTo <https://faustlv2.bitbucket.io/Panoramix> ;
 	a pset:Preset ;
 	rdfs:seeAlso <reverse_saw.ttl> .
 
 <shutter.ttl>
-	lv2:appliesTo <http://faustlv2.bitbucket.org/Panoramix> ;
+	lv2:appliesTo <https://faustlv2.bitbucket.io/Panoramix> ;
 	a pset:Preset ;
 	rdfs:seeAlso <shutter.ttl> .

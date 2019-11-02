@@ -8,7 +8,7 @@
 
 <>
 	a pset:Preset ;
-	lv2:appliesTo <http://faustlv2.bitbucket.org/Panoramix> ;
+	lv2:appliesTo <https://faustlv2.bitbucket.io/Panoramix> ;
 	rdfs:label "shutter" ;
 	lv2:port [
 		lv2:symbol "Balance_11" ;
